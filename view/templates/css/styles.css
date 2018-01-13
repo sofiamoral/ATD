@@ -1,0 +1,20 @@
+
+.product-list .row:nth-child(even){
+  background-color: transparent;
+}
+
+.product-list .row:nth-child(odd){
+  background-color: #EFF0F1;
+}
+
+.product-list .row.listed-product-header{
+	color: #FFF;
+	background-color: #777777;
+	text-transform: capitalize;
+}
+
+.listed-product-image{
+	height: 64px;
+	width: 64px;
+	padding: 10px 0px;
+}
