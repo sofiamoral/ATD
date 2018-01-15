@@ -1,1 +1,5 @@
-# ATD
+# ATD Test
+
+Approach to build the product search:
+
+We have an url that requires usr/pwd validation in order to return the correct data (for testing you can use it with empty usr/psw, because is also returning well formated data) and the data is returned in a json format. Our task is create a page listing the products with the fields image, title and destination, will also contain a form to filter the data by title. First we will need to create the templates, css and jquery to display the data. In javascript we are going to manipulate the json results in order to create the list of products. In php is better to work creating a middleware to process the json data to be sure is optimised the format and is not jsonp, has to be scalable in the case we will need to create in a future a new method to create, update or delete records.  We will need two controllers: one to communicate with the api url and extract the data and the other one to display the filtered data, remember the form is going to send the title filter and you will need to validate the post before to display the data (better to use the post method trying to avoid issues with the browser url max length).
